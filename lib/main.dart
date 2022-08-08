@@ -32,10 +32,13 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: CategoriesScreen(),
+      /// home: CategoriesScreen(),
+
+      initialRoute: '/',      // default is '/'
       routes: {
-        /// '/category-meals': (ctx) => CategoryMealsScreen(categoryId, categoryTitle)
-        '/category-meals': (ctx) => CategoryMealsScreen()
+        '/': (ctx) => CategoriesScreen(),
+        /// '/category-meals': (ctx) => CategoryMealsScreen()
+        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen()
       },
     );
   }
