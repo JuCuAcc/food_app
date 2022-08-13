@@ -20,8 +20,6 @@ class MealDetailScreen extends StatelessWidget {
   Widget buildContainer(Widget child) {
     return Container(
 
-     /// var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
-
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(color: Colors.grey),
