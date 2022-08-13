@@ -5,6 +5,8 @@ import 'package:food_app/data/dummy_data.dart';
 class MealDetailScreen extends StatelessWidget {
   static const routeName = '/meal-detail';
 
+
+
   Widget buildSectionTitle(BuildContext context, String text) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10),
@@ -17,13 +19,17 @@ class MealDetailScreen extends StatelessWidget {
 
   Widget buildContainer(Widget child) {
     return Container(
+
+     /// var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(color: Colors.grey),
       ),
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(10),
-      height: 150,
+      /// height: 150,
+      height:150,
       width: 300,
       child: child,
     );
